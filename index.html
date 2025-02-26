@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Completion</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .certificate {
+            width: 90%;
+            max-width: 900px;
+            padding: 40px;
+            background: #fff;
+            border: 10px solid #4a90e2;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        .certificate h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .certificate h2 {
+            font-size: 1.8rem;
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+        .certificate p {
+            font-size: 1rem;
+            color: #555;
+            margin: 10px 0;
+        }
+        .certificate .details {
+            margin: 20px 0;
+            text-align: left;
+            display: inline-block;
+            text-align: left;
+        }
+        .certificate .details p {
+            margin: 5px 0;
+        }
+        .certificate .signature {
+            margin-top: 30px;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .certificate .signature p {
+            margin: 5px 0;
+        }
+        .certificate .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            max-width: 15%;
+        }
+        .certificate .qr-code {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: 80px;
+            max-width: 15%;
+        }
+        @media (max-width: 600px) {
+            .certificate {
+                padding: 20px;
+                border-width: 5px;
+            }
+            .certificate h1 {
+                font-size: 2rem;
+            }
+            .certificate h2 {
+                font-size: 1.5rem;
+            }
+            .certificate p {
+                font-size: 0.9rem;
+            }
+            .certificate .logo,
+            .certificate .qr-code {
+                width: 60px;
+            }
+            .certificate .signature {
+                padding-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate">
+        <img src="download.jpeg" alt="Saylani Logo" class="logo">
+        <h1><b>Certificate of Completion</b></h1>
+        <h2>Introduction To Programming</h2>
+        <p class="details">This is to certify that <strong>Saad</strong>, son of <strong>Nasir</strong>, has successfully completed the "Introduction to Programming" course with an outstanding performance, demonstrating dedication and excellence in the field of web development.</p>
+        <p class="motto">"With passion and persistence, anything is achievable."</p>
+        <p class="percentage">Percentage: 81%</p>
+        <p class="footer">Status: Pass</p>
+        <div class="stamp"></div>
+        <div class="qr-code"></div>
+        <div class="details">
+            <p><strong>Course Duration:</strong> 4 Months</p>
+            <p><strong>Instructor:</strong> Sir Shariq</p>
+            <p><strong>Completion Date:</strong> February 26, 2025</p>
+            <p><strong>Grade:</strong> A</p>
+        </div>
+        <div class="signature">
+            <p>__________________________</p>
+            <p>Candidate Signature</p>
+        </div>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://saylaniwelfare.com" alt="QR Code" class="qr-code">
+    </div>
+</body>
+</html>
